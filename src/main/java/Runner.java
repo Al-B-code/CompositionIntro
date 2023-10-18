@@ -22,6 +22,9 @@ public class Runner {
 
         car.setEngine(betterEngine);
         System.out.println(car.getHp());
+        System.out.println(car.getPrice());
+        System.out.println(car.getInventory());
+        System.out.println(car.getTitle());
 
         //create motor
         Motor motor = new Motor(100, 200);
