@@ -8,10 +8,18 @@ public class Speedboat extends Vehicle implements IMotorised{
     String hullType;
     IMotorised motor;
 
-    public Speedboat(float weight, int maxSpeed, IProduct baseProduct, IMotorised motor){
+    public Speedboat(float weight, int maxSpeed, IProduct baseProduct, IMotorised motor, String hullType){
         super(weight, maxSpeed, baseProduct);
         this.motor = motor;
+        this.hullType = hullType;
 
+    }
+
+    public String getHullType(){
+        return this.hullType;
+    }
+    public void setHullType(String hullType){
+        this.hullType = hullType;
     }
 
 

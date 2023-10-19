@@ -30,11 +30,13 @@ public class Runner {
         Motor motor = new Motor(100, 200);
         Speedboat speedboat = new Speedboat(300, 240,
         new Product(700, 5, "super boat"),
-        motor);
+        motor, "Round-bottom");
 
         System.out.println(speedboat.getTitle());
         System.out.println(speedboat.getInventory());
         System.out.println(speedboat.getHp());
+        speedboat.setHullType("V-shaped");
+        System.out.println(speedboat.getHullType());
 
 
         //Helicopter
