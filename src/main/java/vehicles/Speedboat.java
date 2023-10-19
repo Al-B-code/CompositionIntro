@@ -28,12 +28,12 @@ public class Speedboat extends Vehicle implements IWaterVehicle, IMotorised{
     //
     @Override
     public void startEngine() {
-
+        this.motor.startEngine();
     }
 
     @Override
     public void stopEngine() {
-
+        this.motor.stopEngine();
     }
 
     @Override
@@ -43,7 +43,7 @@ public class Speedboat extends Vehicle implements IWaterVehicle, IMotorised{
 
     @Override
     public void setHp(int hp) {
-
+        this.motor.setHp(hp);
     }
 
     @Override
@@ -53,6 +53,6 @@ public class Speedboat extends Vehicle implements IWaterVehicle, IMotorised{
 
     @Override
     public void setFuel(int fuel) {
-
+        this.motor.setFuel(fuel);
     }
 }

@@ -13,10 +13,12 @@ public class Motor implements IMotorised{
     //
     @Override
     public void startEngine() {
+        System.out.println("The motor has started");
     }
 
     @Override
     public void stopEngine() {
+        System.out.println("The motor has stopped");
     }
 
     @Override
